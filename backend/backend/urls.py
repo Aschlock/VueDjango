@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.http import HttpResponse
 
 urlpatterns = [
-    path('admin/', HttpResponse("Here's the text of the Web page.")),
+    path('admin/', admin.site.urls),
 ]
